@@ -28,6 +28,12 @@ A web-based clinic and medical rehabilitation management system for Al Tamayoz. 
 
 ---
 
+## Documentation
+
+- Controllers and credentials guide: `docs/controllers-and-credentials.md`
+
+---
+
 ## Tech Stack
 
 - **Backend:** PHP 8.2, Laravel 11

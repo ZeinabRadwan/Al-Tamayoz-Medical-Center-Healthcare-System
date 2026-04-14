@@ -30,7 +30,7 @@ A web-based clinic and medical rehabilitation management system for Al Tamayoz. 
 
 ## Documentation
 
-- Controllers and credentials guide: `docs/controllers-and-credentials.md`
+- **Full guide (roles, permissions, role flows, features, routes):** `docs/system-documentation.md`
 
 ---
 

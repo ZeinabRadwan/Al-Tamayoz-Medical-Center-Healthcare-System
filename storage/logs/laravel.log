@@ -436,3 +436,12 @@
 #47 {main}
 "} 
 [2026-02-03 17:23:26] local.INFO: [{"id":1,"name":"\u0627\u0644\u0639\u0644\u0627\u062c \u0627\u0644\u0637\u0628\u064a\u0639\u064a","created_at":"2024-12-23T11:33:39.000000Z","updated_at":"2024-12-23T11:33:39.000000Z","report_templates":[]},{"id":2,"name":"\u0627\u0644\u0639\u0644\u0627\u062c \u0627\u0644\u0648\u0638\u064a\u0641\u064a","created_at":"2024-12-23T11:33:39.000000Z","updated_at":"2024-12-23T11:33:39.000000Z","report_templates":[]},{"id":3,"name":"\u0639\u0644\u0627\u062c \u0639\u0644\u0644 \u0627\u0644\u0646\u0637\u0642 \u0648\u0627\u0644\u062a\u062e\u0627\u0637\u0628","created_at":"2024-12-23T11:33:39.000000Z","updated_at":"2024-12-23T11:33:39.000000Z","report_templates":[]},{"id":4,"name":"\u062a\u062d\u0644\u064a\u0644 \u0627\u0644\u0633\u0644\u0648\u0643 \u0627\u0644\u062a\u0637\u0628\u064a\u0642\u064a ABA","created_at":"2024-12-23T11:33:39.000000Z","updated_at":"2024-12-23T11:33:39.000000Z","report_templates":[]}]  
+[2026-07-21 10:04:41] local.ERROR: Command "pint" is not defined. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"pint\" is not defined. at C:\\xampp\\htdocs\\al-tamayoz-medical-rehab-system\\vendor\\symfony\\console\\Application.php:726)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\al-tamayoz-medical-rehab-system\\vendor\\symfony\\console\\Application.php(284): Symfony\\Component\\Console\\Application->find('pint')
+#1 C:\\xampp\\htdocs\\al-tamayoz-medical-rehab-system\\vendor\\symfony\\console\\Application.php(193): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\xampp\\htdocs\\al-tamayoz-medical-rehab-system\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\xampp\\htdocs\\al-tamayoz-medical-rehab-system\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1235): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\xampp\\htdocs\\al-tamayoz-medical-rehab-system\\artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#5 {main}
+"} 

@@ -1,0 +1,86 @@
+{
+  "info": {
+    "_postman_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "name": "Al-Tamayoz Integrations API",
+    "description": "Postman collection for the medical services integration endpoint.\n\nUse base_url: http://127.0.0.1:8000 when running `php artisan serve`.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://127.0.0.1:8000"
+    }
+  ],
+  "item": [
+    {
+      "name": "Get Integration Services",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{base_url}}/api/v1/integrations/services",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "integrations",
+            "services"
+          ],
+          "query": [
+            {
+              "key": "category",
+              "value": "Clinic",
+              "description": "Optional. Department | Clinic | Laboratory | Radiology | Procedure | Package",
+              "disabled": true
+            },
+            {
+              "key": "active",
+              "value": "true",
+              "description": "Optional. true | false",
+              "disabled": true
+            },
+            {
+              "key": "available",
+              "value": "true",
+              "description": "Optional. true | false",
+              "disabled": true
+            },
+            {
+              "key": "search",
+              "value": "",
+              "description": "Optional. Search by sku, name_en, name_ar, or category",
+              "disabled": true
+            },
+            {
+              "key": "paginate",
+              "value": "true",
+              "description": "Optional. Set to true to enable pagination",
+              "disabled": true
+            },
+            {
+              "key": "per_page",
+              "value": "15",
+              "description": "Optional. Used only when paginate=true",
+              "disabled": true
+            },
+            {
+              "key": "page",
+              "value": "1",
+              "description": "Optional. Used only when paginate=true",
+              "disabled": true
+            }
+          ]
+        },
+        "description": "Returns all medical services in a standardized product-like format for external integrations.\n\nExact URL with artisan serve:\nGET http://127.0.0.1:8000/api/v1/integrations/services\n\nAuth: none (public endpoint)."
+      },
+      "response": []
+    }
+  ]
+}
